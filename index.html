@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- Calling CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="css/remixicon.css"> <!-- Remix Icon CSS File -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> <!-- Owl Carousel CSS File -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> <!-- Owl Carousel CSS File -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Style CSS File -->
+    <link rel="stylesheet" href="css/media.css"> <!-- Media CSS Query File  -->
+    
+    <!-- Page Title -->
+    <title>Qwafelna</title>
+</head>
+<body>
+    <!-- Start all page Div  -->
+    <div class="all-page">
+        <header class="page-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid"> 
+                    <a class="navbar-brand ml-4" href="index.html">
+                        <img src="img/logo.png" alt="Qwafelna Logo" width="45">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="ri-menu-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">أخر العروض</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">عن قوافلنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">الأسألة الشائعة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="complaints.html">الشكاوي</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">تواصل معنا</a>
+                            </li>
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link" href="#">إنشاء حساب</a>
+                            </li>
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link" href="#">تسجيل دخول</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-btns">
+                        <button class="btn account d-none d-lg-inline-block" id="signup">إنشاء حساب</button>
+                        <button class="btn account d-none d-lg-inline-block" id="signin">تسجيل دخول</button>
+                        <button class="btn lang" id="langDropdown"><span class="ri-arrow-drop-down-line"></span>Ar</button>
+                        <div class="langs">
+                            <p class="single-lang"><a href="#" class="link-lang">Arabic</a></p>
+                            <p class="single-lang"><a href="#" class="link-lang">English</a></p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="overlay-pop"></div>
+        </header> <!-- End Page Header-->
+
+        <!-- Start Main Page -->
+        <main class="page-main inners-sec home">
+            <!-- Header Section -->
+            <section class="new-sec header-sec">
+                <div class="container-fluid">
+                    <div class="back-img">
+                        <div class="content text-center">
+                            <h2 class="sec-title">
+                                نحن نقدم أعلى مستويات الجودة <br>
+                                <span class="pink">خدمات النقل</span>
+                            </h2>
+                            <p class="desc">نقل بري سريع ومهذب وغير مكلف في <br> المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="contact">
+                        <div class="tabs">
+                            <button class="tab book-btn active" data-target="book">
+                                <span class="ri-car-fill"></span>
+                                إحجز رحلتك
+                            </button>
+                            <button class="tab manage-btn" data-target="manage">
+                                <span class="ri-calendar-fill"></span>
+                                إدارة الحجوزات
+                            </button>
+                        </div>
+                        <form class="form">
+                            <div class="tab-contents book show" id="book">
+                                <div class="radios">
+                                    <div class="goBack">
+                                        <input type="radio" id="goBack" name="radios" checked>
+                                    <label for="goBack">ذهاب وعودة</label>
+                                    </div>
+                                    <div class="gojust">
+                                        <input type="radio" id="gojust" name="radios">
+                                    <label for="gojust">ذهاب فقط</label>
+                                    </div>
+                                </div>
+                                <div class="main-form">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-1 mb-sm-4">
+                                            <div class="single-clm fromTo">
+                                                <div class="from inpt">
+                                                    <input type="text" placeholder="من">
+                                                    <span class="ri-map-pin-fill icon"></span>
+                                                </div>
+                                                <div class="to inpt">
+                                                    <input type="text" placeholder="إلى">
+                                                    <span class="ri-map-pin-fill icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-1 mb-sm-4">
+                                            <div class="single-clm">
+                                                <div class="dates">
+                                                    <input type="date" class="f-date">
+                                                    <input type="date" class="s-date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-1 mb-sm-3">
+                                            <div class="single-clm">
+                                                <select name="tarsform-method">
+                                                    <option value="طريقة الشحن">طريقة الشحن</option>
+                                                    <option value="طريقة الشحن">طريقة الشحن</option>
+                                                    <option value="طريقة الشحن">طريقة الشحن</option>
+                                                    <option value="طريقة الشحن">طريقة الشحن</option>
+                                                    <option value="طريقة الشحن">طريقة الشحن</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-1 mb-sm-3">
+                                            <div class="single-clm">
+                                                <select name="car-type">
+                                                    <option value="نوع السيارة">نوع السيارة</option>
+                                                    <option value="نوع السيارة">نوع السيارة</option>
+                                                    <option value="نوع السيارة">نوع السيارة</option>
+                                                    <option value="نوع السيارة">نوع السيارة</option>
+                                                    <option value="نوع السيارة">نوع السيارة</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn submit">
+                                    أبحث عن رحلة
+                                    <span class="ri-arrow-left-line"></span>
+                                </button>
+                            </div>
+
+                            <div class="tab-contents manage" id="manage">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-clm">
+                                            <input type="text" placeholder="رقم الحجز">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-clm">
+                                            <input type="text" placeholder="رقم الجوال">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn submit">
+                                    إستعراض الحجز
+                                    <span class="ri-arrow-left-line"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section> <!-- End Header Section -->
+
+            <!-- Features Section -->
+            <section class="new-sec features-sec">
+                <div class="container-fluid">
+                    <div class="sec-head">
+                        <h3 class="sec-title">الخدمات والمميزات</h3>
+                    </div>
+                    <div class="boxes">
+                        <div class="row justify-content-around">
+                            <div class="col-sm-6 col-lg-4 px-md-5">
+                                <div class="single-box">
+                                    <div class="image-div">
+                                        <img src="img/office-building.png" alt="Features Image">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="feat-title">احجز الشركة اللي تناسبك</h4>
+                                        <p class="feat-desc">اختر شركة النقليات التي تناسبك من بين مجموعة واسعة من الخيارات</p>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Column -->
+                            <div class="col-sm-6 col-lg-4 px-md-5">
+                                <div class="single-box">
+                                    <div class="image-div">
+                                        <img src="img/destination.png" alt="Features Image">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="feat-title">تتبع مسار السيارة</h4>
+                                        <p class="feat-desc">تتبع مسار السيارة في الوقت الفعلي بدءا من تسلميك لسيارة وحتى استلامها</p>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Column -->
+                            <div class="col-sm-6 col-lg-4 px-md-5">
+                                <div class="single-box">
+                                    <div class="image-div">
+                                        <img src="img/surface1.png" alt="Features Image">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="feat-title">اختر طريقة الدفع اللي تناسبك</h4>
+                                        <p class="feat-desc">طرق الدفع متنوعة وأمنه، مدى، فيزا وماستر، بطاقات الائتمان</p>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Column -->
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End Feature Section -->
+            <section class="new-sec offers-sec">
+                <div class="container-fluid">
+                    <div class="sec-head">
+                        <p class="sub-title">إذهب وأكتشف</p>
+                        <h3 class="sec-title">أفضل العروض على الرحلات</h3>
+                    </div>
+                    <div class="boxes mt-5" dir="ltr">
+                        <div class="owl-carousel owl-theme">
+                            <div class="single-slide">
+                                <img src="img/mohammed-alorabi-_ABfNIGGsZk-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">جدة</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                            <div class="single-slide">
+                                <img src="img/numan-shah-sug8IwYPtv4-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">المدينة المنورة</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                            <div class="single-slide">
+                                <img src="img/hala-alghanim-f5ZB0LHwi0s-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">الرياض</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                            <div class="single-slide">
+                                <img src="img/mohammed-alorabi-_ABfNIGGsZk-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">الرياض</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                            <div class="single-slide">
+                                <img src="img/numan-shah-sug8IwYPtv4-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">الرياض</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                            <div class="single-slide">
+                                <img src="img/mohammed-alorabi-_ABfNIGGsZk-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">الرياض</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                            <div class="single-slide">
+                                <img src="img/hala-alghanim-f5ZB0LHwi0s-unsplash.jpg" alt="Slide Image" class="back-img">
+                                <div class="slide-content">
+                                    <div class="offer-info">
+                                        <h4 class="offer-name">الرياض</h4>
+                                        <span class="ri-bookmark-3-fill icon"></span>
+                                    </div>
+                                    <div class="travels">
+                                        <p class="name"><span class="ri-arrow-left-right-fill icon"></span> <span class="sp-name">عدد الرحلات</span></p>
+                                        <span class="num">345</span>
+                                    </div>
+                                </div>
+                            </div> <!-- End Single Slide -->
+                        </div> <!-- End Offers  Slide -->
+                    </div>
+                </div>
+            </section> <!-- End Feature Section -->
+
+            <!-- Start Video Section -->
+            <section class="new-sec video-sec">
+                <div class="container-fluid">
+                    <div class="sec-head">
+                        <p class="sub-title">إستعد</p>
+                        <h3 class="sec-title">فيديو تعريفي  لطريقة الطلب</h3>
+                    </div>
+                    <div class="video-div mt-5">
+                        <video src="img/viedeo.mp4" class="video" controls width="100%"></video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Start Partnets Section -->
+            <section class="new-sec partnets-sec">
+                <div class="container-fluid">
+                    <div class="sec-head text-center">
+                        <h3 class="sec-title">مزودي الخدمات (شركات النقل)</h3>
+                    </div>
+                    <div class="boxes">
+                        <img src="img/Marion Skr.png" alt="Partnet">
+                        <img src="img/Le French Crew.png" alt="Partnet">
+                        <img src="img/Mattrod.png" alt="Partnet">
+                    </div>
+                </div>
+            </section> <!-- End Partners Section -->
+            
+            <!-- Start helping Section -->
+            <section class="new-sec help-sec">
+                <div class="container-fluid">
+                    <div class="sec-head text-center">
+                        <h3 class="sec-title">تحتاج مساعدة؟</h3>
+                        <p class="sub-title">فريقنا متواجد لخدمتكم على مدار الساعة 24/7</p>
+                    </div>
+                    <div class="boxes mt-5">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="single-card">
+                                    <span class="ri-whatsapp-line card-icon"></span>
+                                    <p class="card-para">+970598696102</p>
+                                </div> <!-- End Single Card -->
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="single-card">
+                                    <span class="ri-phone-line card-icon"></span>
+                                    <p class="card-para">920000997</p>
+                                </div> <!-- End Single Card -->
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="single-card">
+                                    <span class="ri-mail-send-line card-icon"></span>
+                                    <p class="card-para">support@qwafelna.com</p>
+                                </div> <!-- End Single Card -->
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="single-card">
+                                    <span class="ri-map-pin-line card-icon"></span>
+                                    <p class="card-para">الرياض، طريق الملك عبدالعزيز، 
+                                        حي العمل، 12643</p>
+                                </div> <!-- End Single Card -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End Partners Section -->
+        </main> <!-- End Page Main -->
+
+        <!-- Start Page Footer -->
+        <footer class="page-footer" dir="rtl">
+            <div class="container-fluid">
+                <div class="footer-content">
+                    <div class="top-part text-center">
+                        <h3 class="part-title">اشترك في نشرتنا الإخبارية</h3>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="البريد الإلكتروني">
+                            <button class="btn send">إرسال</button>
+                        </form>
+                    </div>
+                    <div class="btm-part mt-4">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-5">
+                                <div class="single-clm about-us">
+                                    <h4 class="ft-name">من نحن</h4>
+                                    <div class="ft-content">
+                                        <p class="para">قوافلنا رواد في تقديم خدمات النقليات. جميع شركات نقل السيارات في منصة واحدة</p>
+                                        <div class="social-links">
+                                            <a href="#" class="link"><span class="ri-twitter-fill"></span></a>
+                                            <a href="#" class="link"><span class="ri-instagram-line"></span></a>
+                                            <a href="#" class="link"><span class="ri-snapchat-line"></span></a>
+                                            <a href="#" class="link"><span class="ri-youtube-line"></span></a>
+                                            <a href="#" class="link"><span class="ri-linkedin-line"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-5 mt-5 mt-md-0">
+                                <div class="single-clm">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="list-links">
+                                                <li class="item"><a href="#" class="item-link">الرئيسية</a></li>
+                                                <li class="item"><a href="#" class="item-link">أخر عروضنا</a></li>
+                                                <li class="item"><a href="#" class="item-link">عن قوافلنا</a></li>
+                                                <li class="item"><a href="#" class="item-link">الأسألة الشائعة</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul class="list-links">
+                                                <li class="item"><a href="#" class="item-link">انظم كمزود خدمة</a></li>
+                                                <li class="item"><a href="#" class="item-link">الشكاوي</a></li>
+                                                <li class="item"><a href="#" class="item-link">تواصل معنا</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-sm-5 mt-lg-0 col-lg-2">
+                                <div class="single-clm">
+                                    <div class="payments">
+                                        <img src="img/visa.png" alt="Payment Card">
+                                        <img src="img/mada.png" alt="Payment Card">
+                                        <img src="img/masterCard.png" alt="Payment Card">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Footer Content Div -->
+                <div class="copies">
+                    <p class="copyright mb-0">الحقوق محفوظة قوافلنا © 2021</p>
+                    <p class="designby mb-0">Design By Sadi Harb*</p>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- End all page Div-->
+
+    <!-- Calling Js Files -->
+    <script src="js/jquery-3.6.0.min.js"></script> <!-- jQuery Library File -->
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap Js File -->
+    <script src="js/owl.carousel.min.js"></script> <!-- Owl Carousel Js File -->
+    <script src="js/jquery.js"></script> <!-- Jquery Code Js File -->
+    <script src="js/main.js"></script> <!-- Jquery Code Js File -->
+</body>
+</html>
